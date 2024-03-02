@@ -1,0 +1,37 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: #1f1f1f;
+}
+.gallery {
+  max-width: 1200px;
+  margin: 7em auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 700px;
+}
+.item {
+  background-position: cover;
+  background-repeat: no-repeat;
+}
+.item:nth-of-type(1) {
+  background-image: url("../assets/car1.jpg");
+}
+.item:nth-of-type(2) {
+  background-image: url("../assets/car2.jpg");
+}
+.item:nth-of-type(3) {
+  background-image: url("../assets/car3.jpg");
+}
+.item:nth-of-type(4) {
+  background-image: url("../assets/car4.jpg");
+}
+.item:nth-of-type(5) {
+  background-image: url("../assets/car5.jpg");
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
