@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Css</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card card1">
+        <button id="close">button</button>
+        <h3>Web Development</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
+          voluptates!
+        </p>
+      </div>
+      <div class="card card2">
+        <h3>Web Development</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
+          voluptates!
+        </p>
+      </div>
+    </div>
+    <button id="button">button</button>
+    <script>
+      const button = document.getElementById("button");
+      const close1 = document.getElementById("close");
+      button.addEventListener("click", () => {
+        document.querySelector(".card1").classList.add("open");
+        document.querySelector(".card1").classList.remove("close");
+      });
+
+      close1.addEventListener("click", () => {
+        document.querySelector(".card1").classList.add("close");
+        document.querySelector(".card1").classList.remove("open");
+      });
+    </script>
+  </body>
+</html>

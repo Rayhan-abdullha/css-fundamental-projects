@@ -1,0 +1,62 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5em;
+}
+h1.main-head {
+  font-size: 3.5rem;
+  position: relative;
+}
+h1.main-head::before {
+  position: absolute;
+  content: "N";
+  font-size: 20rem;
+  left: -2rem;
+  top: -10rem;
+  color: rgb(0, 0, 0, 0.05);
+}
+
+section {
+  display: flex;
+  padding-top: 3em;
+  border-top: 1px solid black;
+  flex-direction: column;
+  gap: 3em;
+}
+article {
+  /* width: 100%; */
+  border: 1px solid gray;
+  padding: 1em;
+}
+h1 {
+  font-size: 2rem;
+}
+p {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 600px) {
+  section {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  article {
+    flex: 1;
+  }
+  .first {
+    flex-basis: 100%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .first {
+    flex-basis: 0;
+  }
+}

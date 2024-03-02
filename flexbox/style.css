@@ -1,0 +1,30 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #2c2c2c;
+  font-family: "Courier New, Courier, monospace";
+  margin: 2rem;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+article {
+  flex-grow: 1;
+}
+article img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
